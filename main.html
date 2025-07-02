@@ -156,22 +156,22 @@
   </div>
 
   <script>
-    document.getElementById("whatsapp-form").addEventListener("submit", function (e) {
-      e.preventDefault();
+document.getElementById("whatsapp-form").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const phone = document.getElementById("phone").value.trim();
-      const message1 = document.getElementById("message").value.trim();
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const message1 = document.getElementById("message").value.trim();
 
-      const fullMessage =
-        `Hello,%0AMy Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message1}`;
-const whatsappNumber = "918810743304";
-const message = "Hello! I want to contact you.";
-const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-window.open(url, "_blank");
+  const fullMessage =
+    `Hello,%0AMy Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message1}`;
 
-    });
+  const whatsappNumber = "918810743304"; // Make sure to use country code (91 for India)
+  const url = `https://wa.me/${whatsappNumber}?text=${fullMessage}`;
+  window.open(url, "_blank");
+});
+
   </script>
 </body>
 </html>
