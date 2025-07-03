@@ -23,6 +23,12 @@ body {
     background-color: #111;
     color: #fff;
 }
+.product-img a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
 
 .navbar .logo {
     font-size: 24px;
